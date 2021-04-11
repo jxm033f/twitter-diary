@@ -33,6 +33,11 @@ char prevValue = 0;
 String tweet = "";
 int charLeft = 32;
 
+int x_coor = 0;
+int y_coor = 0;
+
+//int xyzPins[] = {6, 7, 8};
+
 char value11[4] = {'.', '!', '?', '1'};
 char value12[4] = {'a', 'b', 'c', '2'};
 char value13[4] = {'d', 'e', 'f', '3'};
@@ -165,6 +170,8 @@ void setup() {
     pinMode(comPin[i], OUTPUT);
   }
 
+//  pinMode(xyzPins[2], INPUT_PULLUP);
+
   lcd.print("Waiting for");
   lcd.setCursor(0,1);
   lcd.print("authentication");
@@ -196,6 +203,14 @@ void setup() {
 }
 
 void loop() {
+//  int xVal = analogRead(xyzPins[0]);
+//  int yVal = analogRead(xyzPins[1]);
+//  int zVal = digitalRead(xyzPins[2]);
+//
+//  if ((xVal == -1 || xVal == 1) && (yVal == -1 || yVal == 1) && zVal == HIGH) {
+//    lcd.setCursor(xVal,yVal);
+//  }
+  
   int packetSize = Udp.parsePacket();
   if (packetSize) {
     int len = Udp.read(incomingPacket, 255);

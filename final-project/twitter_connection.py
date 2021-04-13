@@ -10,8 +10,8 @@ sock.connect((UDP_IP, SHARED_UDP_PORT))
 
 def tweeting(message):
 	url = "https://api.thingspeak.com/apps/thingtweet/1/statuses/update"
-	parameters = {'api_key':'69ANW6SCU9ZBTJF9',
-					'status': message}
+	parameters = {'api_key':'123456789',
+					'status': message} #change to appropriate API Key
 	response = requests.post(url, json = parameters)
 	time.sleep(.2)
 

@@ -1,7 +1,7 @@
 # Twitter Diary
 COMS 3930 Final Project
 
-For this project, I decided to test out hardware and software that we haven't covered through labs which includes a twitter API, OLED, 4 digit 7-segment display and a 4x4 keypad. The end result requires the user to authenticate the ESP32 program by running the twitter_connection.py program which would then allow one to write messages which would then be posted at https://twitter.com/ThatEsp8266. In terms of writing the actual messages, I choose to use the 4x4 keypad as it reminded me of a flip phone number pad. My goal was to make a portable wireless device that can send quick tweets without the use of a phone. I connected this to the art of creative writing as one can use this device in order to share updates when they have a thought.
+For this project, I decided to test out hardware and software that we haven't covered through labs which includes a twitter API, OLED, 4 digit 7-segment display and a 4x4 keypad. The end result requires the user to authenticate the ESP32 program by running the twitter_connection.py program which would then allow one to write messages which would then be posted at https://twitter.com/ThatEsp8266. In terms of writing the actual messages, I choose to use the 4x4 keypad as it reminded me of a flip phone number pad. My goal was to make a portable wireless device that can send quick tweets without the use of a phone. I connected this to the art of creative writing as one can use this device in order to share updates when they have a thought they would like to share.
 
 ## Materials
 - Raspberry Pi
@@ -96,7 +96,10 @@ python3 twitter_connection.py
 ```
 
 ## Images
-Enclosure in progress.
+![Top View](imgs/top_view.jpg)
+![Front View](imgs/front_view.jpg)
+![Inside View](imgs/back_view.jpg)
+![Start Up Screen](imgs/startup_screen.jpg)
 
 ## Links
-Once blog post is ready will connect.
+[Blog Post](http://edblogs.columbia.edu/comsx3930-001-2021-1/2021/04/21/final-project-twitter-diary/) <br />
